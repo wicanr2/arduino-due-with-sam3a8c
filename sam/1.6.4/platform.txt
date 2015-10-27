@@ -91,3 +91,12 @@ tools.bossac.upload.params.verbose=-i -d
 tools.bossac.upload.params.quiet=
 tools.bossac.upload.pattern="{path}/{cmd}" {upload.verbose} --port={serial.port.file} -U {upload.native_usb} -e -w -v -b "{build.path}/{build.project_name}.bin" -R
 
+#BOSSAC For SAM3A8C
+#tools.bossac_sam3a8c.path={build.variant}/hardware/arduino/sam/1.6.4/variants/sam3a8c_due
+tools.bossac_sam3a8c.path={runtime.platform.path}/variants/sam3a8c_due
+tools.bossac_sam3a8c.cmd=bossac
+tools.bossac_sam3a8c.cmd.windows=bossac.exe
+
+tools.bossac_sam3a8c.upload.params.verbose=-i -d
+tools.bossac_sam3a8c.upload.params.quiet=
+tools.bossac_sam3a8c.upload.pattern="{path}/{cmd}" {upload.verbose} --port={serial.port.file} -U {upload.native_usb} -e -w -v -b "{build.path}/{build.project_name}.bin" -R
